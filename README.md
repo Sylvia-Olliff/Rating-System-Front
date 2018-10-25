@@ -14,6 +14,9 @@ Front End Interface for the Rating System and starting point for a unified front
 ## Introduction
 This application runs in the user's browser and is a self-contained way of interacting with the Rating System API. It remembers user details requiring a fresh login only once every 24 hours. It also remembers user settings like which columns to display in lane maintenance for example.
 
+# Copyright
+This code has been released for public display in agreement with Bo Brown Presedent of Rogers and Brown Customs Brokers. Contact bo_brown@rogers-brown.com for more information.
+
 ---
 
 # Using This Interactive Documentation
