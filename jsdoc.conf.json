@@ -1,0 +1,42 @@
+{
+  "source": {
+    "include": ["./src"],
+    "exclude": ["node_modules", "dist", "public", "out"],
+    "includePattern": "\\.(vue|js)$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "opts": {
+    "template": "./node_modules/ink-docstrap/template",
+    "recurse": true,
+    "package": "./package.json",
+    "readme": "./README.md"
+  },
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "plugins": [
+    "plugins/markdown",
+    "node_modules/jsdoc-vuejs"
+  ],
+  "templates": {
+    "logoFile": "",
+    "cleverLinks": true,
+    "monospaceLinks": false,
+    "dateFormat": "MM/dd/YYYY",
+    "outputSourceFiles": true,
+    "outputSourcePath": true,
+    "systemName": "Rating System Front",
+    "footer": "Authors: Joe Olliff",
+    "copyright": "Rogers & Brown Customs Brokers Copyright © 2010-2020",
+    "navType": "vertical",
+    "theme": "cerulean",
+    "linenums": true,
+    "collapseSymbols": false,
+    "inverseNav": true,
+    "protocol": "html://",
+    "methodHeadingReturns": true
+  },
+  "markdown": {
+    "hardwrap": true
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "rating-system-front",
+  "version": "1.1.16",
+  "private": true,
+  "app-root": "C:\\Users\\olliffj\\DEV\\rating-system-front",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "predoc": "git add . && git commit -m \"Update to documentation\" && git push origin master && npm run doc-clean",
+    "doc": "jsdoc -c ./jsdoc.conf.json",
+    "postdoc": "npm run doc-reset-project && npm run doc-deploy-project && npm version patch",
+    "doc-clean": "rimraf out/",
+    "doc-reset-project": "rimraf Z:\\DEV\\JOE\\Doc-Server\\projects\\%npm_package_name% && mkdir Z:\\DEV\\JOE\\Doc-Server\\projects\\%npm_package_name%",
+    "doc-deploy-project": "copy -R %npm_package_app-root%\\out\\%npm_package_name%\\%npm_package_version%\\* Z:\\DEV\\JOE\\Doc-Server\\projects\\%npm_package_name%",
+    "predeploy": "npm run build",
+    "deploy": "copy -R -Force ./dist/* Z:/DEV/JOE/Load-Balancer/public",
+    "just-doc": "jsdoc -c ./jsdoc.conf.json"
+  },
+  "dependencies": {
+    "autonumeric": "^4.2.15",
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.1",
+    "moment": "^2.22.1",
+    "papaparse": "^4.5.0",
+    "vue": "^2.5.16",
+    "vue-alertify": "^1.0.5",
+    "vue-awesome": "^2.3.7",
+    "vue-easytable": "^1.7.1",
+    "vue-flatpickr-component": "^7.0.4",
+    "vue-router": "^3.0.1",
+    "vue-scrolling-table": "^0.2.0",
+    "vue-simple-spinner": "^1.2.8",
+    "vue-wait": "^1.2.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-beta.11",
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.11",
+    "@vue/cli-service": "^3.0.0-beta.11",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-semistandard": "^12.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "ink-docstrap": "^1.3.2",
+    "jsdoc": "^3.5.5",
+    "jsdoc-vuejs": "^2.2.0",
+    "rimraf": "^2.6.2",
+    "semistandard": "^12.0.1",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
