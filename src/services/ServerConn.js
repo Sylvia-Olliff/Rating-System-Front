@@ -3,8 +3,8 @@
 import axios from 'axios';
 
 let baseURL = '';
-if (process.env.NODE_ENV === 'production') baseURL = 'http://as400.rogers-brown.com:8001/Rating';
-else baseURL = 'http://as400.rogers-brown.com:8101/Rating';
+if (process.env.NODE_ENV === 'production') baseURL = 'REDACTED';
+else baseURL = 'REDACTED';
 
 const ratingConn = axios.create({
   baseURL,
