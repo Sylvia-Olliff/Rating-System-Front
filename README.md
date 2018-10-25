@@ -1,8 +1,18 @@
+# GitHub Users!
+This VueJS application was created solely by myself for Rogers and Brown Customs Brokers' child company Rogers and Brown North American Logistics. Where it is used daily by their dispatchers.
+
+The below documentation was intended for internal use. If you wish to see the same documentation this refers to, clone this repository, install all dependencies, and use the command 'npm run doc'. You will then have the js-doc static page under the directory ./out. Also Please note that key portions of the configuration file for this application has been removed. If you attempt to run this application it will FAIL! This code is simply here as a demonstration for those interested in detailed documentation using JSDOC and how to set up an authenticated VueJS application in an INTERNAL environment. I emphasize internal as this app is not setup to be as secure as it would be if it were 'out in the wild' instead of used internally.
+
+## Fellow Software Engineers
+This documentation was written specifically for fellow programmers who's only experience were with an IBM environment and the RPG language. If you see somewhere were the documentation can be improved for a broader audience, please feel free to submit a pull request.
+
+Also please note that the LTL (Less than Truck Load) module for the Rating System is currently under construction.
+
 # Rating System Front-End Application
 Front End Interface for the Rating System and starting point for a unified front-end application for all R&B in-house web-based solutions.
 
 ## Introduction
-This application runs in the user's browser.
+This application runs in the user's browser and is a self-contained way of interacting with the Rating System API. It remembers user details requiring a fresh login only once every 24 hours. It also remembers user settings like which columns to display in lane maintenance for example.
 
 ---
 
